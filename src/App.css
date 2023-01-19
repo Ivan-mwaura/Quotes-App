@@ -1,0 +1,47 @@
+.main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.quote{
+  background-color: white;
+  width: 40%;
+   height: fit-content;
+  
+  align-items: center;
+  margin-top: 100px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+span{
+  font-size: 80px;
+  font-weight: 30px;
+  
+}
+.author{
+  float: right;
+  text-align: right;
+}
+.button{
+  border: none;
+  width:90px;
+  float: right;
+  height:40px;
+  border-radius: 4px;
+  margin-right: 10px;
+  color: white;
+  font-size: 15px;
+  
+}
+.twitter{
+  width:30px;
+  height: 30px;
+  align-items: center;
+  padding-left: 18px;
+  padding-top: 12px;
+  border-radius: 3px;
+}
+
