@@ -3,12 +3,17 @@
   display: flex;
   justify-content: center;
 }
+.heading{
+ text-align: center;
+
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .quote{
   background-color: white;
   width: 40%;
   height: fit-content;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 80px;
   border: 2px solid gray;
   border-radius: 8px;
   padding: 30px;
@@ -18,6 +23,9 @@
 span{
   font-size: 80px;
   font-weight: 30px;
+  
+    transition: color 2s ease-in-out;
+
   
 }
 .author{
@@ -62,6 +70,14 @@ span{
   display: flex;
   justify-content: center;
 }
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
+}
+
 @media only screen and (max-width : 600px){
   .main{
     height: 100vh;

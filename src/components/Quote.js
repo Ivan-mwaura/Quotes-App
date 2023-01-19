@@ -10,6 +10,7 @@ export default function Quote(){
     const[color,setColor] = React.useState({
         bgColor:""
     })
+    const[isloading, setisLoading] = React.useState(true)
 
 
     function getQuote(){
@@ -17,25 +18,35 @@ export default function Quote(){
         .then(res => res.json())
         .then(res => setQuote(res[Math.floor(Math.random()*res.length)])) 
         let color = randomColor()
-        setColor({bgColor:color}) 
+             
+        setTimeout(() =>{
+            setColor({bgColor:color})
+        },500);
+
     }
        
   console.log(quote.length)
 
     useEffect(()=>{
-        getQuote()
-           
+        setTimeout(() => {
+            getQuote()
+            setisLoading(false)
+        }, 2000);         
     },[])
            
     return(
-        <main style={{backgroundColor:color.bgColor}} className="main">
+        <main style={{backgroundColor:color.bgColor}} className="main " id = "transition" >
+            
             <div  className="quote">
+            <div >
+                <h2 className='heading'>Get Inspired</h2>
+            </div>
               <div className = "container">
                 <div>
-                    <h1  style={{color:color.bgColor}}><span>"</span>{quote.text}</h1>
+                <h1 className={`fade-in ${isloading ? '' : 'show'}`} style={{color:color.bgColor}}><span>"</span>{isloading ? '' : quote.text}</h1>
                 </div>
                 <div >
-                    <p className='author'  style={{color:color.bgColor}}>- {quote.author}</p>
+                    <p className='author'  style={{color:color.bgColor}}>- {isloading ? " " : quote.author}</p>
                 </div><br/><br/><br/>
                 <div >
                     <button className='button' style={{backgroundColor:color.bgColor}} onClick={getQuote}>New Quote</button>
