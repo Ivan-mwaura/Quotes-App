@@ -35,7 +35,7 @@ export default function Quote(){
     },[])
            
     return(
-        <main style={{backgroundColor:color.bgColor}} className="main " id = "transition" >
+        <main  className="main " id = "transition" >
             
             <div  className="quote">
             <div >
