@@ -33,6 +33,7 @@ span{
   margin-right: 10px;
   color: white;
   font-size: 15px;
+  margin-top: 18px;
   
 }
 .twitter{
@@ -61,4 +62,16 @@ span{
   display: flex;
   justify-content: center;
 }
-
+@media only screen and (max-width : 600px){
+  .main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .quote{
+    width: 70%;
+    height: fit-content;
+    padding: 15px;
+  }
+}
