@@ -35,18 +35,21 @@ export default function Quote(){
                     <h1  style={{color:color.bgColor}}><span>"</span>{quote.text}</h1>
                 </div>
                 <div >
-                    <p className='author'>- {quote.author}</p>
+                    <p className='author'  style={{color:color.bgColor}}>- {quote.author}</p>
                 </div><br/><br/><br/>
                 <div >
                     <button className='button' style={{backgroundColor:color.bgColor}} onClick={getQuote}>New Quote</button>
                 </div>
-                <div className=''>
+                <div className='icons'>
                     <p className='twitter' style={{backgroundColor:color.bgColor}}><a href='https://twitter.com/compose/tweet'><Twitter style = {{color:"white"}}/></a></p>
-                    <p className='twitter' style={{backgroundColor:color.bgColor}}><a href='https://twitter.com/compose/tweet'><Instagram style = {{color:"white"}}/></a></p>
+                    <p className='instagram' style={{backgroundColor:color.bgColor}}><a href='https://www.instagram.com/'><Instagram style = {{color:"white"}}/></a></p>
                 </div>
               </div>
+              <div className="editor">
+                <pre>by Ivan Mwaura</pre>
             </div>
-            <div><pre>by Ivan Mwaura</pre></div>
+            </div>
+            
         </main>
     )
 }

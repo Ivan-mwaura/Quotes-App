@@ -3,17 +3,16 @@
   display: flex;
   justify-content: center;
 }
-
 .quote{
   background-color: white;
   width: 40%;
-   height: fit-content;
-  
+  height: fit-content;
   align-items: center;
   margin-top: 100px;
   border: 2px solid gray;
   border-radius: 8px;
   padding: 30px;
+ 
 }
 
 span{
@@ -43,5 +42,23 @@ span{
   padding-left: 18px;
   padding-top: 12px;
   border-radius: 3px;
+  margin-right: 10px;
+}
+.instagram{
+  width:30px;
+  height: 30px;
+  align-items: center;
+  padding-left: 18px;
+  padding-top: 12px;
+  border-radius: 3px;
+  margin-right: auto;
+}
+.icons{
+  display: flex;
+  
+}
+.editor{
+  display: flex;
+  justify-content: center;
 }
 
